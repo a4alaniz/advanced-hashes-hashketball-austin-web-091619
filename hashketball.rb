@@ -119,6 +119,7 @@ end
 
 def num_points_scored(players_name)
   game_hash.each do |location, team|
+    binding.pry
   team.each do |attributes, data|
     if attributes == :players 
       data.each do |player|
@@ -230,7 +231,6 @@ biggest_shoesize = numbs.sort[-1]
 
 game_hash.collect do |team, stats|
       stats[:players].collect do |player, data|
-        binding.pry
         data.collect do |category, stat|
           if category == :shoe 
             if stat == biggest_shoesize
