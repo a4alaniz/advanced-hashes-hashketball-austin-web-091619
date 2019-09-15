@@ -241,5 +241,4 @@ game_hash.collect do |team, stats|
 end 
 playerrebound
 end 
-big_shoe_rebounds
-end
+
