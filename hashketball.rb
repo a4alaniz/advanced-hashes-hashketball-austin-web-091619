@@ -119,7 +119,6 @@ end
 
 def num_points_scored(players_name)
   game_hash.each do |location, team|
-    binding.pry
   team.each do |attributes, data|
     if attributes == :players 
       data.each do |player|
@@ -197,27 +196,6 @@ end
 new_hash
 end
 
-# def big_shoe_rebounds
-#   playerrebound = nil 
-#   numbs = []
-#   biggest_shoesize = nil 
-#       game_hash.collect do |team, stats|
-#         stats[:players].collect do |player, data|
-#           numbs.push(data[:shoe])
-#           biggest_shoesize = numbs.sort[-1] 
-#             data.collect do |category, stat|
-#               if category == :shoe 
-#                 if stat == biggest_shoesize
-#                   playerrebound =  data[:rebounds]
-#                 end 
-#               end
-#             end
-#           end
-#       end
-#         playerrebound
-#       end
-
-
 def big_shoe_rebounds
   playerrebound = nil 
   numbs = [] 
@@ -225,6 +203,7 @@ def big_shoe_rebounds
       stats[:players].collect do |player, data|
         numbs.push(data[:shoe])
       biggest_shoesize = numbs.sort[-1]
+      binding.pry
     end 
   end 
 biggest_shoesize = numbs.sort[-1]
