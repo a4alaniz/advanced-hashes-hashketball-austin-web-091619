@@ -217,16 +217,6 @@ end
 #         playerrebound
 #       end
 
-# def big_shoe_rebounds
-#   playerrebound = nil 
-#   numbs = [] 
-#   game_hash.collect do |team, stats|
-#       stats[:players].collect do |player, data|
-#         numbs.push(data[:shoe])
-#       biggest_shoesize = numbs.sort[-1]
-#     end 
-#   end 
-# biggest_shoesize = numbs.sort[-1]
 
 def big_shoe_rebounds
   playerrebound = nil 
