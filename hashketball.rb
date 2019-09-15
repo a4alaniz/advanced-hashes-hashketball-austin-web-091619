@@ -233,7 +233,7 @@ game_hash.collect do |team, stats|
         data.collect do |category, stat|
           if category == :shoe 
             if stat == biggest_shoesize
-            playerrebound =  data[:rebounds]
+            playerrebound =  data[:rebounds] binding.pry
             end 
           end 
       end 
