@@ -197,18 +197,5 @@ end
 new_hash
 end
 
-# def big_shoe_rebounds
-#   game_hash.each do |location, team|
-#   team.each do |attributes, data|
-#     if attributes == :players 
-#       data.each do |player|
-#         if player[:player_name] == players_name
-#           return player[:shoe]
-#     end
-#     end
-#   end
-#   end
-# end
-# end
 
 
